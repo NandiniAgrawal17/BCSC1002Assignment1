@@ -7,4 +7,13 @@
 package definitions;
 
 public class Book {
+    //fields
+    private String  bookName;
+    private String authorName;
+    private String ISBNNumber;
+    //constructor
+    //getter
+    //setter
+    //toString()
+    //hashcode
 }
