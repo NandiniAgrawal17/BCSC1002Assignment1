@@ -114,11 +114,15 @@ public class Student {
         System.out.println("Thank you for returning book\"" + name + "\".");
 
     }
-//
-//  public void listOfIssuedBook() {
-//        for (Book book : this.nameOfTheBookIssuedByTheStudent) {
-//            System.out.println(book);
-//
-//        }
-//    }
+
+    /**
+     * This method will print a list of issued book.
+     */
+
+    public void listOfIssuedBook() {
+        for (Book book : this.nameOfTheBookIssuedByTheStudent) {
+            System.out.println(book);
+
+        }
+    }
 }
