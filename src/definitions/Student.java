@@ -18,51 +18,61 @@ public class Student {
 
     public Student() {
         this.nameOfTheBookIssuedByTheStudent = new Book[5];
-     for (int i = 0; i < nameOfTheBookIssuedByTheStudent.length; i++) {
-     nameOfTheBookIssuedByTheStudent[i] = new Book();
-     }
-     }
+        for (int i = 0; i < nameOfTheBookIssuedByTheStudent.length; i++) {
+            nameOfTheBookIssuedByTheStudent[i] = new Book();
+        }
+    }
 
+    /**
+     * This method will allow student to return a book.
+     *
+     * @param name The name of the book that the student want to return.
+     */
 
+    public static void doReturn(String name) {
+        System.out.println("Thank you for returning book\"" + name + "\".");
 
-     //
-     public Book[] getNameOfTheBookIssuedByTheStudent() {
-     return nameOfTheBookIssuedByTheStudent.clone(); //.clone() will return a copy of array ,
-     //no the array reference itself.
-     }
+    }
 
-     public void setNameOfTheBookIssuedByTheStudent(Book[] nameOfTheBookIssuedByTheStudent) {
-     this.nameOfTheBookIssuedByTheStudent = nameOfTheBookIssuedByTheStudent;
-     }
+    //
+    public Book[] getNameOfTheBookIssuedByTheStudent() {
+        return nameOfTheBookIssuedByTheStudent.clone(); //.clone() will return a copy of array ,
+        //no the array reference itself.
+    }
 
-     public String getNameOfTheStudent() {
-     return nameOfTheStudent;
+    public void setNameOfTheBookIssuedByTheStudent(Book[] nameOfTheBookIssuedByTheStudent) {
+        this.nameOfTheBookIssuedByTheStudent = nameOfTheBookIssuedByTheStudent;
+    }
 
-     }
+    public String getNameOfTheStudent() {
+        return nameOfTheStudent;
 
-     public void setNameOfTheStudent(String nameOfTheStudent) {
+    }
 
-     this.nameOfTheStudent = nameOfTheStudent;
-     }
+    public void setNameOfTheStudent(String nameOfTheStudent) {
 
-     public long getUniversityRollNumber() {
+        this.nameOfTheStudent = nameOfTheStudent;
+    }
 
-     return universityRollNumber;
-     }
+    public long getUniversityRollNumber() {
 
-     public void setUniversityRollNumber(Long universityRollNumber) {
-     this.universityRollNumber = universityRollNumber;
-     }
-     //toString()
+        return universityRollNumber;
+    }
+    //toString()
 
-     public int getNumberOfBooksIssued() {
-     return numberOfBooksIssued;
-     }
-     //hashcode
+    public void setUniversityRollNumber(Long universityRollNumber) {
+        this.universityRollNumber = universityRollNumber;
+    }
+    //hashcode
 
-     public void setNumberOfBooksIssued(int numberOfBooksIssued) {
-     this.numberOfBooksIssued = numberOfBooksIssued;
-     }
+    public int getNumberOfBooksIssued() {
+        return numberOfBooksIssued;
+    }
+
+    public void setNumberOfBooksIssued(int numberOfBooksIssued) {
+        this.numberOfBooksIssued = numberOfBooksIssued;
+    }
+    //methods
 
     @Override
     public String toString() {
@@ -73,8 +83,6 @@ public class Student {
                 ", nameOfTheBookIssuedByTheStudent=" + Arrays.toString(nameOfTheBookIssuedByTheStudent) +
                 '}';
     }
-    //methods
-
 
     @Override
     public boolean equals(Object o) {
@@ -101,18 +109,6 @@ public class Student {
      */
     public void addBook(String name) {
         System.out.println("\"" + name + "\"Book is issued.");
-    }
-
-
-    /**
-     * This method will allow student to return a book.
-     *
-     * @param name The name of the book that the student want to return.
-     */
-
-    public static void doReturn(String name) {
-        System.out.println("Thank you for returning book\"" + name + "\".");
-
     }
 
     /**
