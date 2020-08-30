@@ -93,58 +93,32 @@ public class Student {
         result = 31 * result + Arrays.hashCode(getNameOfTheBookIssuedByTheStudent());
         return result;
     }
-/**
- * This method will allow student to return a book.
- *
- * @param name The name of the book that the student want to return.
- * <p>
- * public static void doReturn(String name) {
- * System.out.println("Thank you for returning book\"" + name + "\".");
- * <p>
- * }
- * /**
- * This method will allow a student to issue the  book.
- * @param name The name of the book to be issued.
- * <p>
- * public void addBook(String name) {
- * System.out.println("\"" + name + "\"Book is issued.");
- * <p>
- * }
- * <p>
- * /**
- * This
- * <p>
- * public void listOfIssuedBook() {
- * for (Book book : this.nameOfTheBookIssuedByTheStudent) {
- * System.out.println(book);
- * <p>
- * }
- * }
-}
-/**
-public static void doReturn(String name) {
-System.out.println("Thank you for returning book\"" + name + "\".");
-
-}
-/**
- * This method will allow a student to issue the  book.
- *
- * @param name The name of the book to be issued.
- */
-/**
- public void addBook(String name) {
- System.out.println("\"" + name + "\"Book is issued.");
-
- }
 
     /**
-     * This
+     * This method will allow  a student to issue the book.
+     *
+     * @param name The name of the book to be issued.
      */
-/**
-    public void listOfIssuedBook() {
-        for (Book book : this.nameOfTheBookIssuedByTheStudent) {
-            System.out.println(book);
-
-        }
+    public void addBook(String name) {
+        System.out.println("\"" + name + "\"Book is issued.");
     }
+
+
+//    /**
+// * This method will allow student to return a book.
+// *
+// * @param name The name of the book that the student want to return.
+// */
+//
+//  public static void doReturn(String name) {
+// System.out.println("Thank you for returning book\"" + name + "\".");
+//
+//  }
+//
+//  public void listOfIssuedBook() {
+//        for (Book book : this.nameOfTheBookIssuedByTheStudent) {
+//            System.out.println(book);
+//
+//        }
+//    }
 }
