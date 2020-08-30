@@ -53,7 +53,7 @@ public class Book {
 
 
 //toString()
-/**
+
  @Override public String toString() {
  return "Book{" +
  "bookName='" + bookName + '\'' +
@@ -63,7 +63,7 @@ public class Book {
  }
 
  //hashcode
-
+/**
  @Override public boolean equals(Object o) {
  if (this == o) return true;
  if (o == null || getClass() != o.getClass()) return false;
