@@ -22,15 +22,20 @@ public class Book {
         this.isbnNumberOfTheBook = isbnNumberOfTheBook;
     }
 
+    public String getBookName() {
+
+        return bookName;
+    }
+
     //getter
     public void setBookName(String bookName) {
 
         this.bookName = bookName;
     }
 
-    public String getBookName() {
+    public String getAuthorName() {
 
-        return bookName;
+        return authorName;
     }
 
     //setter
@@ -39,19 +44,14 @@ public class Book {
         this.authorName = authorName;
     }
 
-    public String getAuthorName() {
+    public String getISBNNumberOfTheBook() {
+        return isbnNumberOfTheBook;
 
-        return authorName;
     }
 
     public void setISBNNumberOfTheBook(String isbnNumberOfTheBook) {
 
         this.isbnNumberOfTheBook = isbnNumberOfTheBook;
-    }
-
-    public String getISBNNumberOfTheBook() {
-        return isbnNumberOfTheBook;
-
     }
 
 

@@ -14,16 +14,18 @@ public class Student {
     private String nameOfTheStudent;
     private long universityRollNumber;
     private int numberOfBooksIssued;
-    private Book[] nameOfTheBookIssuedByTheStudent;
-
-    public Student() {
-        this.nameOfTheBookIssuedByTheStudent = new Book[5];
-        for (int i = 0; i < nameOfTheBookIssuedByTheStudent.length; i++) {
-            nameOfTheBookIssuedByTheStudent[i] = new Book();
-        }
-    }
 
     /**
+     private Book[] nameOfTheBookIssuedByTheStudent;
+
+     public Student() {
+     this.nameOfTheBookIssuedByTheStudent = new Book[5];
+     for (int i = 0; i < nameOfTheBookIssuedByTheStudent.length; i++) {
+     nameOfTheBookIssuedByTheStudent[i] = new Book();
+     }
+     }
+
+     /**
      * This method will allow student to return a book.
      *
      * @param name The name of the book that the student want to return.
