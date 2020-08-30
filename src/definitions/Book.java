@@ -6,6 +6,9 @@
  * */
 package definitions;
 
+
+import java.util.Objects;
+
 public class Book {
     //fields
     private String bookName;
@@ -54,26 +57,30 @@ public class Book {
 
 //toString()
 
- @Override public String toString() {
- return "Book{" +
- "bookName='" + bookName + '\'' +
- ", authorName='" + authorName + '\'' +
- ", ISBNNumberOfTheBook='" + isbnNumberOfTheBook + '\'' +
- '}';
- }
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookName='" + bookName + '\'' +
+                ", authorName='" + authorName + '\'' +
+                ", ISBNNumberOfTheBook='" + isbnNumberOfTheBook + '\'' +
+                '}';
+    }
 
- //hashcode
-/**
- @Override public boolean equals(Object o) {
- if (this == o) return true;
- if (o == null || getClass() != o.getClass()) return false;
- Book book = (Book) o;
- return Objects.equals(getBookName(), book.getBookName()) &&
- Objects.equals(getAuthorName(), book.getAuthorName()) &&
- Objects.equals(getISBNNumberOfTheBook(), book.getISBNNumberOfTheBook());
- }
+    //hashcode
 
- @Override public int hashCode() {
- return Objects.hash(getBookName(), getAuthorName(), getISBNNumberOfTheBook());
- }
- }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Objects.equals(getBookName(), book.getBookName()) &&
+                Objects.equals(getAuthorName(), book.getAuthorName()) &&
+                Objects.equals(isbnNumberOfTheBook, book.isbnNumberOfTheBook);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBookName(), getAuthorName(), isbnNumberOfTheBook);
+    }
+}
