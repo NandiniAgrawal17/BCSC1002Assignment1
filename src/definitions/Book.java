@@ -18,41 +18,41 @@ public class Book {
         this.authorName = authorName;
         this.isbnNumberOfTheBook = isbnNumberOfTheBook;
     }
+
+    //getter
+    public void setBookName(String bookName) {
+
+        this.bookName = bookName;
+    }
+
+// public String getBookName() {
+//
+// return bookName;
+// }
+
+    //setter
+    public void setAuthorName(String authorName) {
+
+        this.authorName = authorName;
+    }
+
+    // public String getAuthorName() {
+//
+// return authorName;
+// }
+    public void setISBNNumberOfTheBook(String isbnNumberOfTheBook) {
+
+        this.isbnNumberOfTheBook = isbnNumberOfTheBook;
+    }
+
+// public String getISBNNumberOfTheBook() {
+// return isbnNumberOfTheBook;
+//
+// }
+
+
+//toString()
 /**
-
- //getter
- public void setBookName(String bookName) {
-
- this.bookName = bookName;
- }
-
- public String getBookName() {
-
- return bookName;
- }
-
- //setter
- public void setAuthorName(String authorName) {
-
- this.authorName = authorName;
- }
- public String getAuthorName() {
-
- return authorName;
- }
- public void setISBNNumberOfTheBook(String isbnNumberOfTheBook) {
-
- this.isbnNumberOfTheBook = isbnNumberOfTheBook;
- }
-
- public String getISBNNumberOfTheBook() {
- return isbnNumberOfTheBook;
-
- }
-
-
- //toString()
-
  @Override public String toString() {
  return "Book{" +
  "bookName='" + bookName + '\'' +
