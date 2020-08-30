@@ -25,10 +25,10 @@ public class Book {
         this.bookName = bookName;
     }
 
-// public String getBookName() {
-//
-// return bookName;
-// }
+    public String getBookName() {
+
+        return bookName;
+    }
 
     //setter
     public void setAuthorName(String authorName) {
@@ -36,19 +36,20 @@ public class Book {
         this.authorName = authorName;
     }
 
-    // public String getAuthorName() {
-//
-// return authorName;
-// }
+    public String getAuthorName() {
+
+        return authorName;
+    }
+
     public void setISBNNumberOfTheBook(String isbnNumberOfTheBook) {
 
         this.isbnNumberOfTheBook = isbnNumberOfTheBook;
     }
 
-// public String getISBNNumberOfTheBook() {
-// return isbnNumberOfTheBook;
-//
-// }
+    public String getISBNNumberOfTheBook() {
+        return isbnNumberOfTheBook;
+
+    }
 
 
 //toString()
