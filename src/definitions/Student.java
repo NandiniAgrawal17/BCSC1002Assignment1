@@ -104,16 +104,16 @@ public class Student {
     }
 
 
-//    /**
-// * This method will allow student to return a book.
-// *
-// * @param name The name of the book that the student want to return.
-// */
-//
-//  public static void doReturn(String name) {
-// System.out.println("Thank you for returning book\"" + name + "\".");
-//
-//  }
+    /**
+     * This method will allow student to return a book.
+     *
+     * @param name The name of the book that the student want to return.
+     */
+
+    public static void doReturn(String name) {
+        System.out.println("Thank you for returning book\"" + name + "\".");
+
+    }
 //
 //  public void listOfIssuedBook() {
 //        for (Book book : this.nameOfTheBookIssuedByTheStudent) {
